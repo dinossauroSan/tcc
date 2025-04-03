@@ -112,7 +112,7 @@ public class Conjuntos {
     
     public void apresentarConjuntoDasPartesB() { //Conjunto que contém todos os subconjuntos possíveis de A
         Set<Set<Integer>> conjuntoDasPartesB = new HashSet<>();
-        List<Integer> listaElementos = new ArrayList<>(A); // Converte para um arrayDinamico, um array que aumenta de tamanho automaticamente quando novos elementos sao adicionados
+        List<Integer> listaElementos = new ArrayList<>(B); // Converte para um arrayDinamico, um array que aumenta de tamanho automaticamente quando novos elementos sao adicionados
         int tamanho = listaElementos.size(); //Retorna o número de elementos que estao ocupando posições
         
         // Gerar todas as combinações possíveis
