@@ -40,7 +40,7 @@ public class Conjuntos {
             System.out.println("Quantidade inválida! Digite um número entre 0 e 10:"); 
             cardinalidadeB = scanner.nextInt(); 
         }
-        System.out.println("Digite os elementos do conjunto A:"); //Elementos
+        System.out.println("Digite os elementos do conjunto B:"); //Elementos
         for (int i = 0; i < cardinalidadeB; i++) {
             B.add(scanner.nextInt());
         }
