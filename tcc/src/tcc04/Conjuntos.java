@@ -117,9 +117,12 @@ public class Conjuntos {
         
         // Gerar todas as combinações possíveis
         for (int i = 0; i < (1 << tamanho); i++) { // 2^n subconjuntos, onde n é a quantidade de elementos do conjunto
-            Set<Integer> subconjunto = new HashSet<>();
-            for (int j = 0; j < tamanho; j++) {
+            Set<Integer> subconjunto = new HashSet<>(); //i vai de 0 até 2^n - 1, percorrendo todas as combinações possíveis de elementos.
+//Exemplo: Se tamanho = 3, então i vai de 0 a 7 (2³ = 8 subconjuntos)
+            
+            for (int j = 0; j < tamanho; j++) { //Percorre cada elemento do conjunto B
                 if ((i & (1 << j)) != 0) { // Verifica se o bit está "ligado" (1)
+                	//Operação bit a bit para determinar quais elementos devem ser adicionados ao subconjunto, desloca o bit 1 de J, ou seja, se j = 0 -> 0001 em vez de 0000
                     subconjunto.add(listaElementos.get(j));
                 }
             }
